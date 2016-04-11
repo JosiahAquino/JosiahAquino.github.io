@@ -1,2 +1,6 @@
 h1{color: #0000ff;}
 span{color:#ff0000;}
+marquee{background-image:url("earth-map-small.jpg");}
+#rebelde{color:pink; text-decoration: line-through;}
+.unicorn {background-image:url("earth-map-small.jpg"); height: 500px; width:500px;}
+#red{background-color: red;}
