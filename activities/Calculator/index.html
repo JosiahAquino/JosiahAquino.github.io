@@ -1,0 +1,101 @@
+		<html>
+			<head>
+			 <!-- Bootstrap Core CSS -->
+			 <link href="../../css/bootstrap.min.css" rel="stylesheet">
+			 <!-- Custom CSS -->
+			 <link href="css/toggle-sidebar.css" rel="stylesheet">
+			 </head>
+				<body>
+					<style>
+						*{
+							width: 100%;
+						}
+					</style>
+					
+					<script>	
+				  function toNum(n){
+					  return parseInt(n);
+				  }
+				  function add(n1, n2){
+					  sum=toNum(n1) + toNum(n2);
+					output(sum);
+				  }
+				  function subtract(n1, n2){
+					  diff=toNum(n1) - toNum(n2);
+					output(diff);
+				  }
+				  function multiply(n1, n2){
+					  prod=toNum(n1) * toNum(n2);
+					output(prod);
+				  }
+				  function divide(n1, n2){
+					  quot=toNum(n1) / toNum(n2);
+					output(quot);
+				  }
+				  
+				  function output(res){
+					  alert(res);
+				  }
+					</script>
+					
+			<div class="container">
+			<br>
+				<div class="col-md-12">
+					<form name="calc">
+				
+						<div class="row">
+							<div class="col-md-3">
+							Num1: 
+						</div>
+						<div class="col-md-9">
+							<input type="text" id="num1">
+						</div>
+					</div>
+					<br>
+				
+						<div class="row">
+							<div class="col-md-3">
+								Num2: 
+							</div>
+							<div class="col-md-9">
+								<input type="text" id="num2">
+						</div>
+					</div>
+					</form>
+					<br>
+			<div class="row">
+					<div class="col-md-6">
+						<button class="add-btn" onclick="add(document.querySelector('#num1').value, document.querySelector('#num2').value)">Add</button>
+					</div>
+				
+					<div class="col-md-6">
+						<button class="minus-btn" onclick="subtract(document.querySelector('#num1').value, document.querySelector('#num2').value)">Subtract</button>
+					</div>
+				</div>
+				
+				
+				<br>	
+					
+				<div class="row">
+					<div class="col-md-6">
+						<button class="times-btn" onclick="multiply(document.querySelector('#num1').value, document.querySelector('#num2').value)">Multiply</button>
+					</div>
+					
+					<div class="col-md-6">
+						<button class="divide-btn" onclick="divide(document.querySelector('#num1').value, document.querySelector('#num2').value)">Divide</button>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+			<!-- jQuery -->
+			<script src="../../js/jquery.js"></script>
+			<!-- Bootstrap Core JavaScript -->
+			<script src="../../js/bootstrap.min.js"></script>
+  
+
+		 </body>
+		</html>
+		
+		
+		
